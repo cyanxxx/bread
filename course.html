@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>course</title>
+</head>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+
+<body>
+<div class="container">
+<div id="header">
+<div id="left-top">
+    <ul>
+      <li><i class="iconfont">&#xe611;</i><a href="#">给我们意见</a></li>
+      <li><i class="iconfont">&#xe91a;</i><a href="#">关于我们</a></li>
+      <li><i class="iconfont">&#xe638;</i><a href="javascript:aLogin()">会员登录</a></li>
+  </ul>
+
+</div>
+  <div id="navi">
+  <ul>
+	    <li><a href="index.html">首页</a></li>
+      <li><a href="breads.html">全部面包</a></li>
+      <li><a href="course.html">面包课堂</a></li>
+      <li><a href="activity.html">会员社区</a></li>
+  </ul>
+  </div>
+  <div class="form-box">
+     <form action="#" method="get">
+	     <input type="text" placeholder="搜索" class="search">
+       <input type = "submit"class="searchBtn" value=""/>
+        <!--<button class="searchBtn"><i class="iconfont">&#xe608;</i></button>-->
+    </form>
+  </div>
+</div>
+  
+<div class="coursemenu" >
+<ul id="template_main">
+  <li>
+  <span class="img">
+  	<img src="image/course/{{index}}.jpg" alt="{{index}}">
+  </span>   
+    <div class="menutext">
+      <h2 class="name">{{h2}}</h2>
+      <h4 class="username">{{author}}</h4>
+      <div class="info">
+        <span>简介</span>
+        <p>{{text}}</p>
+      </div>
+      <a href="#">more>></a>
+    </div>
+  </li>
+</ul>
+
+
+</div>
+</div>
+
+<div id="footer">
+  <img src="image/logos.png">
+  <div class="footerDl clearfloat">
+    <dl class="footerText">
+      <dt>给我们的意见</dt>
+      <dd><a href="#">发送邮件</a></dd>
+      <dd><a href="#">联系我们</a></dd>
+    </dl>
+   <dl class="footerText">
+     <dt>关于我们</dt>
+       <dd><a href="https://www.freecodecamp.cn/cyanxxx">关注作者</a></dd>
+       <dd><a href="http://www.imooc.com/learn/412">查看参考</a></dd>
+   </dl>
+ <dl class="footerText">
+   <dt>客户服务</dt>
+     <dd><a href="#">帮助中心</a></dd>
+     <dd><a href="#">联系客服</a></dd>
+ </dl>
+ <dl class="footerText">
+   <dt>友情链接</dt>
+     <dd><a href="http://www.haodou.com/s?wd=%E5%90%90%E5%8F%B8&tp=recipe">好豆网</a></dd>
+     <dd><a href="https://www.zhihu.com/topic/19629004/top-answers">知乎烘培</a></dd>
+ </dl>
+  </div>
+</div>
+
+<!--<div id="login">
+
+  <form action="#" method="post">
+	  <div id="loginTop"><h3>登录</h3>
+		  <div id="close"></div>
+ 	  </div>
+  <div class="formGroups ">
+  	  <input type="text" placeholder="用户名">
+  </div>
+
+ <div class="formGroups">
+  	  <input type="password" placeholder="密码">
+  </div>
+  <div id="loginTip">
+  	 <input type="checkbox">
+  	 <span>两周内自动登录</span>
+  </div>
+ 
+  <div class="loginBtn">
+  	<input type="submit" value="登录" class="submit">
+  </div>
+  <div class="loginBtn">
+  	<input type="submit" value="注册" class="submit">
+  </div>
+    
+
+  </form>
+
+</div>
+
+<div id="mask">
+	
+</div>
+-->
+  <script>
+var data =
+[
+{img:'toast', h2:'吐司', h4:'Alen',p:'配料：高筋面粉290克，水190克，黄油24克，细砂糖10克，干酵母4克，盐6克<br>烘焙：烤箱中层，上下火185℃，<br>制作过程：<br>1、根据一般面包的制作流程，把除黄油外的所有材料揉成面团，揉到起筋后，加入黄油继续揉，一直揉到完全阶段。在室温下发酵到2倍大，挤出面团内的空气，将面团重新揉圆并放在室温下醒发15分钟。'},
+{img:'yangjiaobao', h2:'羊角包', h4:'Bob', p:'食材：主料高粉400g，辅料酵母8g，盐8g，糖48g，奶粉8g，蛋液20ml，水190ml，黄油40g，裹入黄油200g<br>步骤<br>1.准备好材，除黄油外的材料，放入面包机桶。<br>2.揉好的面团，立即摊成大片，用保鲜袋包好，送入冰箱冷冻30分钟。<br>'},
+{img:'zhimabao', h2:'红豆芝麻包', h4:'Cici', p:'用料:高筋面粉170g、低筋面粉30g、细砂糖18g、脱脂奶粉15g、盐2.5g、黄油15g、水125g、干酵母3g、红豆泥、350g。<br>红豆泥用料:红豆150克、红糖35克、蜂蜜30克、淡奶油80克、黄油35克<br>红豆泥做法：<br>1、红豆加水浸泡3小时以上或过夜。倒进电压力锅内，加适量的水压30分钟，压至红豆一捏即粉就可以了'},
+{img:'fagun', h2:'法棍', h4:'David', p:'材料：法棍，黄油，大蒜，盐，香菜，法香碎。<br>做法：1、剩法棍斜切成片，或从中间剖开。<br>2、大蒜去皮，捣碎。<br>3、黄油放入小碗，隔水融化。'},
+
+  ];
+
+var g=function(id){
+      if(id.substr(0,1)=='.'){
+        return document.getElementsByClassName(id.substr(1));
+      }
+      return document.getElementById(id);
+    }
+
+function addtxt(){
+	var tpl_main = g('template_main').innerHTML.replace(/^\s+/,'').replace(/\s+$/,'');
+
+	var out_main=[];
+
+	for( i in data){
+	var _html_main=tpl_main.replace(/{{index}}/g,data[i].img)
+							.replace(/{{h2}}/g,data[i].h2)
+							.replace(/{{author}}/g,data[i].h4)
+							.replace(/{{text}}/g,data[i].p);
+	out_main.push(_html_main);
+
+}
+g('template_main').innerHTML=out_main.join('');
+
+}
+
+function aLogin(){
+	//插入遮罩层
+  	var sHeight = document.body.scrollHeight;
+  	var sWidth = document.body.scrollWidth;
+  	var mask = document.createElement("div");
+  	mask.id = "mask";
+  	mask.style.height = sHeight + "px";
+  	mask.style.width = sWidth + "px";
+ 	document.body.appendChild(mask);
+
+ 	//插入login
+ 	var login = document.createElement("div");
+ 	login.id ="login";
+ 	document.body.appendChild(login);
+ 	login.innerHTML="<form action='#' method='post'><div id='loginTop'><h3>登录</h3><div id='close'></div></div><div class='formGroups '><input type='text' placeholder='用户名'></div><div class='formGroups'><input type='password' placeholder='密码'> </div><div id='loginTip'><input type='checkbox'><span>两周内自动登录</span></div><div class='loginBtn'><input type='submit' value='登录' class='submit'></div><div class='loginBtn'><input type='submit' value='注册' class='submit'></div></form>";
+ 	
+
+  var cHeight = document.documentElement.clientHeight;
+  var oHeight = login.offsetHeight;
+  var oWidth = login.offsetWidth;
+  login.style.top = (cHeight-oHeight)/2;
+  login.style.left = (sWidth-oWidth)/2;
+
+  //关闭
+  var close = document.getElementById("close");
+  close.onclick = function(){
+  	document.body.removeChild(login);
+  	document.body.removeChild(mask);
+  }
+}
+addtxt();
+
+</script>
+</body>
+</html>
