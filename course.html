@@ -6,23 +6,23 @@
 </head>
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/main.css">
-
+<link rel="stylesheet" href="css/iconfont.css">
 <body>
 <div class="container">
-<div id="header">
-<div id="left-top">
-    <ul>
-      <li><i class="iconfont">&#xe611;</i><a href="#">给我们意见</a></li>
-      <li><i class="iconfont">&#xe91a;</i><a href="#">关于我们</a></li>
-      <li><i class="iconfont">&#xe638;</i><a href="javascript:aLogin()">会员登录</a></li>
-  </ul>
+<div id="header"  class="clearfloat">
+  <div id="left-top">
+      <ul>
+        <li><i class="iconfont icon-yijian"></i><a href="#">给我们意见</a></li>
+        <li><i class="iconfont icon-guanyuwomen"></i><a href="#">关于我们</a></li>
+        <li><i class="iconfont icon-denglu"></i><a href="javascript:aLogin()">会员登录</a></li>
+    </ul>
 
-</div>
+  </div>
   <div id="navi">
   <ul>
 	    <li><a href="index.html">首页</a></li>
       <li><a href="breads.html">全部面包</a></li>
-      <li><a href="course.html">面包课堂</a></li>
+      <li><a href="#">面包课堂</a></li>
       <li><a href="activity.html">会员社区</a></li>
   </ul>
   </div>
@@ -34,13 +34,13 @@
     </form>
   </div>
 </div>
-  
+
 <div class="coursemenu" >
 <ul id="template_main">
   <li>
   <span class="img">
   	<img src="image/course/{{index}}.jpg" alt="{{index}}">
-  </span>   
+  </span>
     <div class="menutext">
       <h2 class="name">{{h2}}</h2>
       <h4 class="username">{{author}}</h4>
@@ -100,21 +100,21 @@
   	 <input type="checkbox">
   	 <span>两周内自动登录</span>
   </div>
- 
+
   <div class="loginBtn">
   	<input type="submit" value="登录" class="submit">
   </div>
   <div class="loginBtn">
   	<input type="submit" value="注册" class="submit">
   </div>
-    
+
 
   </form>
 
 </div>
 
 <div id="mask">
-	
+
 </div>
 -->
   <script>
@@ -166,7 +166,7 @@ function aLogin(){
  	login.id ="login";
  	document.body.appendChild(login);
  	login.innerHTML="<form action='#' method='post'><div id='loginTop'><h3>登录</h3><div id='close'></div></div><div class='formGroups '><input type='text' placeholder='用户名'></div><div class='formGroups'><input type='password' placeholder='密码'> </div><div id='loginTip'><input type='checkbox'><span>两周内自动登录</span></div><div class='loginBtn'><input type='submit' value='登录' class='submit'></div><div class='loginBtn'><input type='submit' value='注册' class='submit'></div></form>";
- 	
+
 
   var cHeight = document.documentElement.clientHeight;
   var oHeight = login.offsetHeight;

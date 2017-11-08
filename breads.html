@@ -5,19 +5,19 @@
   <title>breads</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="stylesheet" href="css/iconfont.css">
 </head>
 <body>
   <div class="container">
-  <div id="header">
-  <div id="left-top">
-      <ul>
-        <li><i class="iconfont">&#xe611;</i><a href="#">给我们意见</a></li>
-        <li><i class="iconfont">&#xe91a;</i><a href="#">关于我们</a></li>
-        <li><i class="iconfont">&#xe638;</i><a href="javascript:aLogin()">会员登录</a></li>
-    </ul>
+  <div id="header" class="clearfloat">
+    <div id="left-top">
+        <ul>
+          <li><i class="iconfont icon-yijian"></i><a href="#">给我们意见</a></li>
+          <li><i class="iconfont icon-guanyuwomen"></i><a href="#">关于我们</a></li>
+          <li><i class="iconfont icon-denglu"></i><a href="javascript:aLogin()">会员登录</a></li>
+      </ul>
 
-  </div>
+    </div>
     <div id="navi">
     <ul>
         <li><a href="index.html">首页</a></li>
@@ -93,7 +93,7 @@
             </div>
             </li>
         </ul>
-         
+
          <ul class="breadRow clearfloat">
            <div class="breadHeader clearfloat">
              <div class="lineL"></div>
@@ -150,8 +150,8 @@
                    </div>
                  </div>
                  </li>
-             </ul> 
-          
+             </ul>
+
 
           <ul class="breadRow clearfloat">
            <div class="breadHeader clearfloat">
@@ -267,10 +267,10 @@
                    </div>
                  </div>
                  </li>
-             </ul>  
+             </ul>
 
   </div>
-          
+
 </div>
 <div id="footer">
   <img src="image/logos.png">
@@ -313,7 +313,7 @@
   login.id ="login";
   document.body.appendChild(login);
   login.innerHTML="<form action='#' method='post'><div id='loginTop'><h3>登录</h3><div id='close'></div></div><div class='formGroups '><input type='text' placeholder='用户名'></div><div class='formGroups'><input type='password' placeholder='密码'> </div><div id='loginTip'><input type='checkbox'><span>两周内自动登录</span></div><div class='loginBtn'><input type='submit' value='登录' class='submit'></div><div class='loginBtn'><input type='submit' value='注册' class='submit'></div></form>";
-  
+
 
   var cHeight = document.documentElement.clientHeight;
   var oHeight = login.offsetHeight;

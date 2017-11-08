@@ -3,10 +3,10 @@
 *{
     padding:0;
     margin:0;
-	-webkit-font-smoothing: antialiased; 
+	-webkit-font-smoothing: antialiased;
 	font-family:"微软雅黑";
     }
-    
+
 ul,ol,li{
     list-style:none;
     }
@@ -21,23 +21,11 @@ a:hover{
 img{
     display:block;
     border:0;
-    }
-.clearfloat{
-    zoom:1;
-}
+  }
+
 
 .clearfloat:after{
     display:block;
     clear:both;
-    content:".";
-    visibility:hidden;
-    height:0;
+    content:"";
 }
-    
-    
-
-
-     
-
-
-   
